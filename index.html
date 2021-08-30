@@ -25,6 +25,11 @@
         <div class="col-10">
           <figure class="slider d-flex align-items-center">
             <img v-for="(url, imgIndex) in images" :src="url" class="img-fluid" :class="isActive(imgIndex)">
+            <div id="slider-dots">
+              <div class="slider-dots">
+                <div v-for="(url, imgIndex) in images" class="dot" :class="isActive(imgIndex)"></div>
+              </div>
+            </div>
           </figure>
         </div>
         <div class="col-1 d-flex align-items-center justify-content-center">
