@@ -1,0 +1,28 @@
+/****** GENERAL ******/
+body {
+  background-color: #f8f8f8;
+}
+
+/****** ARROW ******/
+.fas {
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.fas:hover {
+  transform: scale(1.2);
+}
+
+/****** SLIDER ******/
+.slider {
+  height: 100vh;
+}
+
+.slider img {
+  display: none;
+  border-radius: 20px;
+}
+
+.slider img.active {
+  display: inline-block;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
